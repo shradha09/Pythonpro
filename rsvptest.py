@@ -36,6 +36,16 @@ def csvdata():
 	_items = db.rsvpdata.find()
 	items = [item for item in _items]
 	print(items)
+
+
+response = make_response(items)
+        response.header["Content-Disposition"] = "attahment; filename=%s" % file_name
+
+#The Content-Disposition response-header field has been proposed as a means for the origin server to suggest a default filename if the user requests that the content is saved to a file.
+
+        return response
+
+
 	
 
 if __name__ == '__main__':
