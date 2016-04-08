@@ -57,36 +57,3 @@ def csvdata():
 
 if __name__ == '__main__':
 	app.run(host='0.0.0.0', debug=True)
-
-
-
-#return Response(items,
-        #               mimetype="text/plain",
-        #               headers={"Content-Disposition":
-        #                            "attachment;filename=test.txt"})
-	
-#	c = mongoexport -d rsvpdata -c rsvpdata --out rsvpdata.csv --fields name,email
-# convert Json to CSV
-     
-     #rsvp_parsed = json.loads(items) 
-     #rsvp_data = rsvp_parsed['rsvpdata']  #mongo-collection-name
-	#open  a csv file for writing
-
-		# data = open('/tmp/rsvp.csv', 'w')
-
-		
-	#create the csv writer object
-	
-	# csvwriter = csv.writer(filename)
-
-	#count = 0
-
-# for rsvp in rsvp_data
-	# if count == 0 :
-		# header = emp.keys()
-		# csvwriter.writerow(header)
-		# count += 1
-	#csvwriter.writerow(rsvp.values())
-#rsvp_data.close()
-
-
