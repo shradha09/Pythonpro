@@ -37,23 +37,6 @@ def csvdata():
 	items = [item for item in _items]
 	print(items)
 	
-		
-	resp = make_response(render_template('csvdata.html'))
-	response.header["Content-Disposition"] = "attahment; filename=%s"  
-#The Content-Disposition response-header field has been proposed as a means for the origin server to suggest a default filename if the user requests that the content is saved to a file.
-	
-	return resp
-
-
-
-
-#def create_csv(data):
-	
-
-
-
-
-
 
 if __name__ == '__main__':
 	app.run(host='0.0.0.0', debug=True)
