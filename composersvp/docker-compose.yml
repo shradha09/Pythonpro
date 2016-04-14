@@ -1,0 +1,14 @@
+version: '2'
+services:
+ web:
+   build: .
+   ports:
+    - "5000:5000"
+   volumes: 
+    - .:/app
+   links:
+    - mongodb
+ mongodb:
+   image: mongo:3.0.10   
+   expose:                 # expose ports without publishing to host machine,
+     - "27017" #only accessible to linked services, can specify only internal			# port 
